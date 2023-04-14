@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Stopwatch and Timer</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Stopwatch and Timer</h1>
+        <div class="buttons">
+            <button id="stopwatch-button" class="active" onclick="showStopwatch()">Stopwatch</button>
+            <button id="timer-button" onclick="showTimer()">Timer</button>
+        </div>
+        <div id="stopwatch" class="timer">
+            <div class="time">
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </div>
+            <div class="controls">
+                <button id="start-button" onclick="startStopwatch()">Start</button>
+                <button id="stop-button" onclick="stopStopwatch()">Stop</button>
+                <button id="reset-button" onclick="resetStopwatch()">Reset</button>
+            </div>
+        </div>
+        <div id="timer" class="timer">
+            <div class="time">
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </div>
+            <div class="controls">
+                <div class="duration">
+                    <input type="number" id="hours-input" placeholder="HH" />
+                    <input type="number" id="minutes-input" placeholder="MM" />
+                    <input type="number" id="seconds-input" placeholder="SS" />
+                </div>
+                <button id="start-button" onclick="startTimer()">Start</button>
+                <button id="stop-button" onclick="stopTimer()">Stop</button>
+                <button id="reset-button" onclick="resetTimer()">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

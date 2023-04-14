@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+.wrapper {
+    margin: 2em auto;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+
+button {
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-right: 1em;
+    padding: 0.6em 1.2em;
+    background-color: #333;
+    color: #fff;
+}
+
+button.active {
+    background-color: #ff8c00;
+}
+
+.timer {
+    display: none;
+}
+
+.timer .time {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.timer .time span {
+    display: inline-block;
+    width: 1.2em;
+    text-align: center;
+}
+
+.timer .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.duration {
+    display: flex;
+    justify-content: center;
+    margin-right: 1em;
+}
+
+.duration input {
+    font-size: 1.2em;
+    padding: 0.6em;
+    margin-right: 0.5em;
+    text-align: center;
+    width: 3em;
+}
+
+
+html,
+body {
+    font-family: Raleway;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(25deg, #16054A, #C8A6B4);
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#blurCanvasTop {
+    left: 0%;
+    top: 0%;
+    position: absolute;
+}
+
+#blurCanvasBottom {
+    left: 50%;
+    top: 0;
+    position: absolute;
+}
+
+.content {
+    left: 15%;
+    top: 20%;
+    width: 70%;
+    position: relative;
+}
+
+h1.title {
+    color: white;
+    font-size: 4vw;
+    display: inline;
+    font-weight: 500;
+}
+
+p.desc {
+    position: relative;
+    width: 100%;
+    font-size: 4vw;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+
+.contacts {
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+    margin-bottom: 1vw;
+    margin-right: 1vw;
+}
+
+.contact li {
+    list-style-type: none;
+    float: left;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 100;
+    font-size: 17px;
+}
+
+.contact li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contact li a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.contact li~li {
+    margin-left: 1vw;
+}
+
+.blur {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.blurTop {
+    left: 40%;
+    top: -110%;
+    transform: rotate(20deg);
+    transform-origin: 0 100%;
+}
+
+.blurBottom {
+    left: -60%;
+    top: 100%;
+    transform: rotate(20deg);
+    transform-origin: 100% 0%;
+}
